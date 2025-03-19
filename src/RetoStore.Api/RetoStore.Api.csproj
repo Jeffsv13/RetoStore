@@ -7,8 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.aspnetcore.authentication.jwtbearer" Version="9.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="9.0.3" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="9.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RetoStore.Dto\RetoStore.Dto.csproj" />
+    <ProjectReference Include="..\RetoStore.Persistence\RetoStore.Persistence.csproj" />
+    <ProjectReference Include="..\RetoStore.Repositories\RetoStore.Repositories.csproj" />
+    <ProjectReference Include="..\RetoStore.Services\RetoStore.Services.csproj" />
   </ItemGroup>
 
 </Project>
