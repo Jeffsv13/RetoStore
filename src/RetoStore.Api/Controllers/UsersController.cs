@@ -36,7 +36,7 @@ public class UsersController : ControllerBase
         var response = await service.RequestTokenToResetPasswordAsync(request);
         return response.Success ? Ok(response) : BadRequest(response);
     }
-    [HttpPost("Reset Password")]
+    [HttpPost("ResetPassword")]
     public async Task<IActionResult> ResetPassword(NewPasswordRequestDto request)
     {
         var response = await service.ResetPasswordAsync(request);

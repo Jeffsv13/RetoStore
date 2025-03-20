@@ -2,7 +2,7 @@
 
 public class ReportInfo
 {
-    public string ConcertName { get; set; }
+    public string EventName { get; set; }
     public decimal Total { get; set; }
 }
 

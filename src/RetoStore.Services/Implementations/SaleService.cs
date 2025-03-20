@@ -115,6 +115,8 @@ public class SaleService : ISaleService
                 (dateEnd == null || s.SaleDate <= dateEnd),
                 orderBy: x => x.OperationNumber,
                 pagination);
+            response.Data = mapper.Map<ICollection<SaleResponseDto>>(data);
+            response.Success = true;
         }
         catch (Exception ex)
         {
