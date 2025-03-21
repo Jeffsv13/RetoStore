@@ -22,6 +22,7 @@ public class GenreSeeder
             {
                 new Genre { Name = "Salsa" },
                 new Genre { Name = "Rock" },
+                new Genre { Name = "Comedia" },
             };
             //Obtener los nombres de los generos que quieres añadir
             var genreNamesToAdd = listGenres.Select(x => x.Name).ToHashSet();
